@@ -1,0 +1,40 @@
+.button
+{
+   border: none;
+  padding: 15px 32px;
+  text-align: center;
+  margin: 0px;
+  font-size: 16px;
+  border-radius: 16px;
+}
+
+.button-grey
+{
+  background-color: #8d99ae;  
+}
+.button-red
+{
+  background-color: #f28482;  
+}
+
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: left;   
+    gap: 20px;
+}
+
+.form-container
+{
+  gap: 20px; 
+  display: flex;
+  
+}
+
+@media (max-width: 500px) {
+.button-red {
+  background-color:aqua;  
+}  
+}
