@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index1.css">
-    <link rel="stylesheet" href="index2.css">
-    <link rel="stylesheet" href="index3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="buttons.css">
+     <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
     <title>Nosorog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.3.1/ol.css">
+    <style>
+      #map {
+          width: 100%;
+          height: 400px;
+      }
+  </style>
 </head>
 <body>
     <h1><b>Носорог (Magnus)</b></h1> 
@@ -28,15 +36,50 @@
             <button class="button button-grey" type="button">Купить позже</button>
         </div>
             <div>
-            <button class="button button-red" type="button">Пожаловаться</button>
+            <button id="test5" class="button button-red" type="button">Счётчик </button>
             
             
                 <button class="button button-grey" type="button">Отправить отзыв</button>    
            </div>
         
          </form>     
-        
+         <table class="table">
+            <thead>
+              <tr>
+                <th>Место</th>
+                <th>Оценка</th>
+                <th>Название фильма</th>
+                <th>Год выхода</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>9.1</td>
+                <td>Зелёная миля</td>
+                <td>1999</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>9.1</td>
+                <td>Побег из Шоушенка</td>
+                <td>1994</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>8.6</td>
+                <td>Властелин колец</td>
+                <td>2003</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+<div id="map" class="map"></div>   
+ <script src="map.js"></script>
+ 
+
+    <script src="index.js"></script>    
 </body>
 </html>
